@@ -32,6 +32,7 @@ font-family: 'Ubuntu Mono', monospace; */
 }
 
 
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -69,6 +70,7 @@ main img {
 
 .profile-pic {
   width: 60px;
+  mix-blend-mode: screen;
 }
 
 .dark {
@@ -567,6 +569,7 @@ main img {
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(44, 186, 224, 0.1);
   backdrop-filter: blur(2px);
+  transition: 0.5s ease-out;
 }
 
 #day-6 .title-profile * {
@@ -576,6 +579,11 @@ main img {
   align-items: start;
   box-sizing: border-box;
 }
+
+#day-6 .title-profile:hover{
+  transform: scale(0.8);
+}
+
 
 #day-6 .profile-details > h4 {
   color: #fff;
@@ -708,6 +716,6 @@ transition: 0.5s ease-out;
   }
 
   .light{
-    background: #fff;
+    background: linear-gradient(0deg, #fff 80%, #1e1e1e 80%);
   }
 }
